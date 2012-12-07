@@ -1,7 +1,10 @@
 CPP = g++
 FLAGS = -Wall -Wextra -Werror
 
-test: NaughtyNice.cpp
+tweet_test: TweetTracker.cpp
+	$(CPP) $^ -o $@
+
+naughty_test: NaughtyNice.cpp
 	$(CPP) $^ -o $@
 
 clean:
